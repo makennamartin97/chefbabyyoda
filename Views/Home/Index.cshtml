@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Menu
+
+<div class="jumbotron">
+    <div class="welcome">
+        <h1 class="text-dark">What has Baby Yoda chosen to cook for you today?</h1>
+        <p class="text-muted">He worked SO HARD to put together something special for you with his wild imagination, and he hopes you love it!</p>
+    </div>
+    <div class="alert alert-primary">
+        <div class="text-center">
+            <p class="item">@Model.Value</p>
+            <a href="/" class="btn btn-info ">Ask for more</a>
+        </div>
+        
+    </div>
+    <img src="~/img/chefbby.png" height="300"width="400" class="center-block" alt="baby yoda">
+    <div class="foot">
+        <p class="text-muted">Baby Yoda has made you @ViewBag.plates meals</p>
+        <a href="/reset" class="btn btn-danger">Start Over</a>
+    </div>
+</div>
